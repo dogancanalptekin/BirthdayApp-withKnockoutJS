@@ -32,7 +32,7 @@
                 </select>
             </div>
             <div class="text-center">
-                <input class="btn btn-success" value="Gönder" data-bind="click:formuGonder"/>
+                <button class="btn btn-success" data-bind="click:formuGonder">Gönder</button>
             </div>
 
         </form>
@@ -42,9 +42,6 @@
 @*Thanks.cshtml*@
 <div data-bind="visible:model.view()=='thanks'">
     <h1>Teşekkürler, <span data-bind="text:model.davetiyeModel.Ad"></span></h1>
-
-    <div class="lead"></div>
-
     <div class="lead">
         <span data-bind="visible:model.davetiyeModel.KatilmaDurumu()=='true'">
             Gelmene çok sevindim.. :) Bütün hazırlıklar tamamlandı!

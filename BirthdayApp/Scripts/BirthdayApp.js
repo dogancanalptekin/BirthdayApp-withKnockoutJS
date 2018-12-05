@@ -30,7 +30,7 @@ var formuGonder = function () {
 }
 
 var katilanlariGetir = function() {
-    $.ajax("/api/DavetiyeGetKatilanlar",
+    $.ajax("/api/Davetiye/GetKatilanlar",
         {
             type: "GET",
             success: function(data) {
